@@ -75,6 +75,7 @@ export async function GET(req: NextRequest) {
   // Connect to database
   await connectToDatabase();
 
+  
   try {
     // Get token from cookie
     const oldToken = req.cookies.get("token")?.value;

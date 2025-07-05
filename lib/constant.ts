@@ -19,13 +19,13 @@ export const NavigationItems = [
     icon: Home,
   },
   {
-    title: "Add User",
-    url: "/add-user",
+    title: "Add Inventory",
+    url: "/add-inventory",
     icon: UserPlus,
   },
   {
-    title: "Manage User",
-    url: "/manage-user",
+    title: "Manage Inventory",
+    url: "/manage-inventory",
     icon: Edit,
   },
   {

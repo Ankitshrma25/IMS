@@ -115,9 +115,9 @@ export default function Page() {
         <div className="mb-8 text-center">
           <div className="mb-2 inline-flex items-center gap-2 text-2xl font-bold text-blue-800">
             <Building2 className="h-8 w-8" />
-            ADRDE IT Management
+            Inventory Management System
           </div>
-          <p className="text-gray-600">IT Asset Management System</p>
+          <p className="text-gray-600">Inventory Management System 509 ABW</p>
         </div>
 
         <Card className="mx-auto w-full max-w-sm">
@@ -195,7 +195,7 @@ export default function Page() {
                 href="mailto:developer@example.com"
                 className="my-2 inline-block text-sm text-blue-600 underline-offset-4 hover:underline"
               >
-                Contact the ADRDE
+                Contact the 509 ABW
               </a>
             </p>
           </CardFooter>

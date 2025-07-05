@@ -37,8 +37,8 @@ export function NavigationSidebar() {
         <div className="flex items-center justify-center gap-4">
           <Shield className="size-12 rounded-md bg-blue-500 fill-blue-500 stroke-1 p-2" />
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-3xl font-semibold tracking-widest">ADRDE</h1>
-            <p className="font-medium">IT Management</p>
+            <h1 className="text-3xl font-semibold tracking-widest">509 ABW</h1>
+            <p className="font-medium">Inventory Management</p>
           </div>
         </div>
       </SidebarHeader>
@@ -73,7 +73,7 @@ export function NavigationSidebar() {
           <p className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-500 text-lg font-semibold text-white">
             A
           </p>
-          <p className="font-medium">Aryan</p>
+          <p className="font-medium">Ankit</p>
         </div>
       </SidebarFooter>
     </Sidebar>

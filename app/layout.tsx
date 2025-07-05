@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ADRDE",
-  description: "IT Management Software",
+  title: "509 ABW",
+  description: "Inventory Management System",
 };
 
 export default function RootLayout({

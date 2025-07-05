@@ -22,7 +22,7 @@ export const Header = () => {
               href="/home"
               className="cursor-default text-xl font-semibold tracking-wide"
             >
-              ADRDE
+              509 ABW
             </Link>
           </div>
           <div className="flex items-center justify-center gap-4">

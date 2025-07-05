@@ -9,7 +9,7 @@ export const Footer = () => {
       <footer className="w-full border-t border-gray-300 bg-gray-100 text-gray-600 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300">
         <div className="mx-auto flex max-w-7xl flex-col justify-between px-4 py-6 md:flex-row">
           <p className="cursor-default text-sm font-light">
-            &copy; {new Date().getFullYear()} ADRDE IT Management System. All
+            &copy; {new Date().getFullYear()} Inventory Management System 509 ABW. All
             rights reserved.
           </p>
 
