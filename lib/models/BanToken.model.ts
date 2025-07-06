@@ -1,17 +1,12 @@
-// @lib/models/BanToken.model.ts
+// @/lib/models/BanToken.model.ts
 
 // Mongoose
 import mongoose, { Document, Schema, Model } from "mongoose";
 
-// Utility
-import { parseJwtExpiry } from "@/lib/parseJwtExpiry";
-
-// Server Environment Variables
-import { envServer } from "@/lib/env/env.server";
-
 // Document interface
 export interface IBanToken extends Document {
   token: string;
+  expiresAt: Date;
 }
 
 // Schema definition
@@ -22,17 +17,18 @@ const BanTokenSchema = new Schema<IBanToken>(
       required: true,
       unique: true,
     },
+    expiresAt: {
+      type: Date,
+      required: true,
+    },
   },
   {
     timestamps: true,
   }
 );
 
-// Optional: Auto-remove expired tokens using MongoDB TTL index
-BanTokenSchema.index(
-  { token: 1 },
-  { expireAfterSeconds: parseJwtExpiry(envServer.JWT_EXPIRES_IN) }
-);
+// TTL index on 'expiresAt'
+BanTokenSchema.index({ expiresAt: 1 }, { expireAfterSeconds: 0 });
 
 // Export model
 export const BanToken: Model<IBanToken> =
