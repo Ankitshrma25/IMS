@@ -7,7 +7,10 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 
 // Icons
-import { LogOut } from "lucide-react";
+import { LogOut, Bell, ToggleLeft } from "lucide-react";
+
+
+
 
 // Utility
 import Link from "next/link";
@@ -53,6 +56,7 @@ export const Header = () => {
               509 ABW
             </Link>
           </div>
+
           <div className="flex items-center justify-center gap-4">
             <Button
               onClick={logout}
@@ -62,6 +66,12 @@ export const Header = () => {
                 Logout <LogOut />
               </span>
             </Button>
+            <Button
+            className="flex cursor-pointer items-center gap-2 bg-slate-500 hover:scale-105 hover:bg-slate-600 active:scale-95"
+            >
+              <Bell />
+            </Button>
+            
           </div>
         </header>
         <Separator className="z-10 h-1 dark:bg-white/50" />
