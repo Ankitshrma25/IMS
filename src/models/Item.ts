@@ -157,7 +157,7 @@ const itemSchema = new mongoose.Schema<IItem>({
 
 // Index for efficient queries
 itemSchema.index({ category: 1, location: 1 });
-itemSchema.index({ serialNumber: 1 });
+// itemSchema.index({ serialNumber: 1 });
 itemSchema.index({ conditionStatus: 1 });
 itemSchema.index({ expirationDate: 1 });
 itemSchema.index({ calibrationSchedule: 1 });
