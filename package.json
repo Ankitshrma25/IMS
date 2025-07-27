@@ -1,0 +1,59 @@
+{
+  "name": "inventory-management-system",
+  "version": "1.3.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "setup": "node setup-env.js",
+    "setup:env": "cp env.example .env.local",
+    "setup:full": "npm run setup:env && npm run setup",
+    "create-users": "node scripts/create-test-user.js",
+    "create-items": "node scripts/create-sample-items.js",
+    "setup-demo": "npm run create-users && npm run create-items",
+    "reset-db": "node scripts/reset-database.js",
+    "reset-all": "npm run reset-db && npm run create-users && npm run create-items",
+    "fix-db": "node scripts/fix-database.js"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.4",
+    "@heroicons/react": "^2.2.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mongoose": "^5.11.96",
+    "bcryptjs": "^3.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.525.0",
+    "mongoose": "^8.16.3",
+    "next": "15.3.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^3.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "keywords": [
+    "inventory",
+    "management",
+    "army",
+    "workshop",
+    "nextjs",
+    "react",
+    "typescript",
+    "mongodb"
+  ],
+  "author": "509 Army Based Workshop",
+  "description": "Comprehensive inventory management system for 509 Army Based Workshop",
+  "license": "MIT"
+}
